@@ -1,3 +1,4 @@
+// Author: Tiancheng Yang
 function redirectToPage() {
     const username = document.getElementById('username').value.trim();
 
