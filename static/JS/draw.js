@@ -1,3 +1,4 @@
+// Author: Tiancheng Yang
 function init() {
     if (window.goSamples) goSamples();
     const $ = go.GraphObject.make;
