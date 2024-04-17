@@ -9,10 +9,14 @@ To install the needed package in the requirement.txt:
 pip install -r requirement.txt
 ```
 ## Running the platform
-To run this code:
+To run the code:
 ```
 python -u app.py
 ```
+## Functions of each file  
+* app.py
+The file, app.py, is the main file of this software, it uses Python combined with the Flask frame to provide a back-end logic for processing the web files in the front-end.
+Besides, it also offers the database to store the information about the individual about the teachers and students. What's more, the information of the questions such as the title and the description of a question is also stored in it.
 ## Catalogue Structure  
 File storage complies with Flask basic requirements.
 ```
