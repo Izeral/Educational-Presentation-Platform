@@ -1,3 +1,4 @@
+// Author: Tiancheng Yang
 document.addEventListener('DOMContentLoaded', function() {
     var form = document.querySelector('form');
     var modal = document.getElementById('modal');
