@@ -75,7 +75,6 @@ File storage complies with Flask basic requirements.
 |      +-- draw.css
 |   +-- JS
 |      +-- login.js
-|      +-- register.js
 |      +-- index.js
 |      +-- teacher.js
 |      +-- draw.js
