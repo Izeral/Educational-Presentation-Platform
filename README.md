@@ -1,4 +1,5 @@
 # Educational-Presentation-Platform
+The platform introduces visualisation technology to help students gain insight into their knowledge more easily after class, and improve the efficiency and effectiveness of knowledge learning and utilisation. It also relieves the pressure of inadequate teaching resources and reduces teaching costs. In addition, teachers can more clearly understand students' mastery of knowledge and judge students' knowledge weaknesses based on the concept-example correlation level and knowledge transfer ability embodied in the answers submitted by students, so as to carry out more targeted teaching.
 
 ## Requirments
 * Python3
@@ -11,7 +12,7 @@ pip install -r requirement.txt
 ## Running the platform
 Clone the repository:
 ```
-git clone (https://github.com/Izeral/Educational-Presentation-Platform.git)
+git clone https://github.com/Izeral/Educational-Presentation-Platform.git
 ```
 To run the code:
 ```
