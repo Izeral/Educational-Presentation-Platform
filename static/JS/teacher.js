@@ -1,3 +1,4 @@
+// Author: Tiancheng Yang
 document.addEventListener('DOMContentLoaded', function() {
     setupStudentLinks();
     setupPublishAssignment();
