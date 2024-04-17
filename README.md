@@ -30,7 +30,7 @@ Database contains four main type of tables. First is the 'students' table, which
 
 The database.db I provide here, contains the questions I have uploaded before, you could use them directly.
 
-I also provide 3 account for you:
+I also provide three accounts for you:
 | Name | Password |
 | ----- | -----    |
 |  student1  |  Ytc123  |
