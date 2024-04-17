@@ -1,26 +1,29 @@
+/* 
+Author: Tiancheng Yang
+*/
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Arial', sans-serif;
-    background-color: #f0f2f5; /* 浅色背景 */
+    background-color: #f0f2f5;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #333; /* 深色文字，适应浅色主题 */
+    color: #333;
 }
 
 .register-container {
     padding: 2em;
-    background: #ffffff; /* 浅色容器背景 */
+    background: #ffffff;
     border-radius: 6px;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.1); /* 浅色阴影 */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
     text-align: center;
 }
 
 .register-container h1 {
     margin: 0 0 1rem;
-    color: #007bff; /* 蓝色标题 */
+    color: #007bff;
 }
 
 .register-container input {
@@ -28,14 +31,14 @@ body, html {
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
-    border: 1px solid #ced4da; /* 浅色边框 */
-    background-color: #f8f9fa; /* 浅色输入背景 */
-    color: #495057; /* 深色输入文字 */
+    border: 1px solid #ced4da;
+    background-color: #f8f9fa;
+    color: #495057;
 }
 
 .register-container input:focus {
     outline: none;
-    border-color: #80bdff; /* 焦点时的边框颜色 */
+    border-color: #80bdff;
 }
 
 .register-container .login-button,
@@ -44,7 +47,7 @@ body, html {
     padding: 10px 15px;
     font-size: 15px;
     color: #ffffff;
-    background-color: #007bff; /* 蓝色按钮 */
+    background-color: #007bff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -54,7 +57,7 @@ body, html {
 
 .register-container .login-button:hover,
 .register-container .back-button:hover {
-    background-color: #0056b3; /* 鼠标悬停时的按钮颜色 */
+    background-color: #0056b3;
 }
 
 .register-container .login-button:focus,
@@ -65,5 +68,5 @@ body, html {
 .register-container .status-info {
     font-size: 0.9rem;
     text-align: left;
-    color: #6c757d; /* 状态信息的深色文字 */
+    color: #6c757d;
 }
