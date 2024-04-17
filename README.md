@@ -11,7 +11,7 @@ pip install -r requirement.txt
 ## Running the platform
 Clone the repository:
 ```
-python -u app.py
+git clone (https://github.com/Izeral/Educational-Presentation-Platform.git)
 ```
 To run the code:
 ```
