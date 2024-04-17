@@ -1,0 +1,125 @@
+#myDiagramDiv {
+background-color: #F8F8F8;
+border: 1px solid #aaa;
+}
+    body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidebar button {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    background: none;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.sidebar button:hover {
+    background-color: #575757;
+}
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+}
+.dropdown-container a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+}
+.dropdown-container a:hover {
+    background-color: #333;
+}
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+    height: 100vh;
+}
+.image-container {
+    display: none;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+.image-container img {
+    height: 100%;
+    width: auto;
+}
+.input-container {
+    display: none;
+    width: 100%;
+    height: 50%;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.input-area {
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+.submit-button:hover {
+    background-color: #45a049;
+}
+.default-message {
+    text-align: center;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.title-box {
+padding: 20px;
+}
+
+.description-box {
+padding: 20px;
+height: 80vh; /* 调整为所需的高度 */
+}
+
+#titleInput, #descriptionInput {
+width: 100%;
+padding: 10px;
+box-sizing: border-box; /* 包括内边距和边框在内的总宽度 */
+margin-bottom: 10px;
+}
+
+#descriptionInput {
+height: 75%; /* 调整为所需的高度 */
+}
+
+#assignmentArea {
+display: none; /* 默认隐藏 */
+}

@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* 浅色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333; /* 深色文字，适应浅色主题 */
+}
+
+.register-container {
+    padding: 2em;
+    background: #ffffff; /* 浅色容器背景 */
+    border-radius: 6px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1); /* 浅色阴影 */
+    text-align: center;
+}
+
+.register-container h1 {
+    margin: 0 0 1rem;
+    color: #007bff; /* 蓝色标题 */
+}
+
+.register-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ced4da; /* 浅色边框 */
+    background-color: #f8f9fa; /* 浅色输入背景 */
+    color: #495057; /* 深色输入文字 */
+}
+
+.register-container input:focus {
+    outline: none;
+    border-color: #80bdff; /* 焦点时的边框颜色 */
+}
+
+.register-container .login-button,
+.register-container .back-button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #007bff; /* 蓝色按钮 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.register-container .login-button:hover,
+.register-container .back-button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的按钮颜色 */
+}
+
+.register-container .login-button:focus,
+.register-container .back-button:focus {
+    outline: none;
+}
+
+.register-container .status-info {
+    font-size: 0.9rem;
+    text-align: left;
+    color: #6c757d; /* 状态信息的深色文字 */
+}

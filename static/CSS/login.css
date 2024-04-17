@@ -1,0 +1,84 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #F7F8FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Viewport Height */
+}
+
+/* 容器样式，用于居中卡片 */
+.container {
+    width: 100%;  /* 盒子的宽度 */
+    height: 70%; /* 盒子的高度 */
+    text-align: center;
+}
+
+h1 {
+    /* 根据实际需要调整样式 */
+    margin-bottom: 20px; /* 标题和卡片之间的距离 */
+}
+
+/* 卡片样式 */
+.card {
+    width: 30%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 10px; /* 每个卡片之间的间距 */
+    margin-top: 10px;
+}
+
+/* 输入组样式 */
+.input-group {
+    margin-bottom: 15px; /* 输入组之间的间距 */
+}
+
+.input-group label,
+.input-group input,
+.input-group button {
+    width: 300px;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-width: 1px;
+    margin-bottom: 15px;
+}
+
+.login-button {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* 使按钮分布在两端 */
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 5px 0; /* 为按钮添加一些间隔 */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-basis: 48%; /* 将按钮宽度设置为容器宽度的一半减去一点间隔 */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+

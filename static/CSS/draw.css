@@ -1,0 +1,12 @@
+.info-box {
+border: 2px solid black;  /* Black border with 2px thickness */
+padding: 10px;            /* Some padding inside the box */
+margin: 10px 0;           /* Some margin outside the box */
+}
+
+#buttonRow {
+display: flex;
+justify-content: space-between;
+width: 100%;
+padding: 10px 0;
+}
