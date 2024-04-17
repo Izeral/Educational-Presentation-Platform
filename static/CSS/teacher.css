@@ -1,3 +1,6 @@
+/* 
+Author: Tiancheng Yang
+*/
 #myDiagramDiv {
 background-color: #F8F8F8;
 border: 1px solid #aaa;
@@ -106,18 +109,18 @@ padding: 20px;
 
 .description-box {
 padding: 20px;
-height: 80vh; /* 调整为所需的高度 */
+height: 80vh;
 }
 
 #titleInput, #descriptionInput {
 width: 100%;
 padding: 10px;
-box-sizing: border-box; /* 包括内边距和边框在内的总宽度 */
+box-sizing: border-box;
 margin-bottom: 10px;
 }
 
 #descriptionInput {
-height: 75%; /* 调整为所需的高度 */
+height: 75%;
 }
 
 #assignmentArea {
