@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clickable Comment Boxes</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+</head>
+<body>
+
+<div class="search-container">
+    <form action="/search" method="get">
+        <input type="text" placeholder="Search..." name="search">
+        <input type="submit" value="Go">
+    </form>
+</div>
+
+<div id="modal" class="modal">
+    没有找到匹配的内容
+    <button id="close-modal">确认</button>
+</div>
+<div id="overlay" class="overlay"></div>
+
+{% for item in results %}
+<a href="{{ url_for('draw', title=item.title, description=item.description) }}" class="comment-link">
+    <div class="comment-box">
+        <div class="username"><strong>{{ item.title }}</strong></div>
+        <div class="comment-content">{{ item.description }}</div>
+    </div>
+</a>
+{% endfor %}
+<button id="returnButton">Return</button>
+</body>
+</html>

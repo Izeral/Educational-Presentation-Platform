@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+        <title>Educational Presentation Platform</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <h1><strong>Welcome to the Educational Presentation Platform!</strong></h1><br>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <script>
+                        window.onload = function() {
+                            alert("{{ messages|join('\\n')|safe }}");
+                        }
+                    </script>
+                {% endif %}
+            {% endwith %}
+            <div class="card">
+                <form id="login-form" method="post" action="{{ url_for('login') }}">
+                    <div class="input-group">
+                        <input id="username" name="username" placeholder="Input your user name" required>
+                    </div>
+                    <div class="input-group">
+                        <input id="password" name="password" placeholder="Input your password" required>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" class="button login-button">Log in</button>
+                        <button type="button" onclick="window.location.href='{{ url_for('register') }}';" class="button register-button">Register</button>
+                    </div>
+                </form>
+            </div>
+
+        
+    </body>
+</html>

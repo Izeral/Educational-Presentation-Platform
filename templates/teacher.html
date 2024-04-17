@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/teacher.css') }}">
+	<script src="{{ url_for('static', filename='js/go.js', v='1.0') }}"></script>
+    <script src="{{ url_for('static', filename='js/teacher.js') }}"></script>
+</head>
+<body>
+    <div class="sidebar">
+		{% for title, entries in results.items() %}
+		<button class="dropdown-btn">{{ title }}</button>
+			<div class="dropdown-container" style="display: none;">
+				{% for student, answer in entries %}
+				<a href="#" class="student-link" data-answer='{{ answer|tojson|safe }}' data-title="{{ title }}" data-stu="{{student}}">{{ student }}</a>
+        		{% endfor %}
+			</div>
+			{% endfor %}
+			<button class="dropdown-btn" id="publishAssignmentBtn">发布题目</button>
+			<button class="dropdown-btn" id="returnButton">返回登录</button>
+		</div>
+      <div class="main-content">
+		<input type="hidden" id="currentTitle" value="">
+		<input type="hidden" id="currentStudent" value="">
+        <div class="default-message" id="defaultMessage">
+          <p>点击左侧按钮以显示学生作业/发布题目。</p>
+        </div>
+        <div class="content-area hide" id="contentArea">
+        <div class="image-container show" id="imageContainer">
+
+        <div id="myDiagramDiv" style="width: 100%; flex-grow: 1; height: 750px; background-color: rgb(40, 44, 52); position: relative; 
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0); cursor: auto;">
+        <canvas tabindex="0" width="1206" height="1125" > This text is displayed if your browser does not support the Canvas HTML element.</canvas></div>
+        Diagram Model saved in JSON format: 
+		<textarea id="mySavedModel" style="width:100%;height:300px"></textarea>
+    <button onclick="printDiagram()">Print Diagram Using SVG</button>
+        <div class="input-container show" id="inputContainer">
+            <textarea class="input-area" id="inputText" placeholder="在此输入您的批改..."></textarea>
+            <button class="submit-button" id="submitBtn">Submit</button>
+        </div>
+    </div>
+    </div>
+    <div class="assignment-area hide" id="assignmentArea">
+      <div class="title-box">
+          <input type="text" id="titleInput" placeholder="请输入题目标题..." />
+      </div>
+      <div class="description-box">
+          <textarea id="descriptionInput" placeholder="请输入题目详细内容..."></textarea>
+      </div>
+      <button class="submit-button" onclick="submitAssignment()">提交题目</button>
+  </div>
+</div>
+		
+
+</body>
+</html>

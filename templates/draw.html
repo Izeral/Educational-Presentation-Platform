@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clickable Comment Boxes</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/draw.css') }}">
+</head>
+<body>
+<div id="allSampleContent" class="p-4 w-full">
+  <div id="sample">
+    <div style="width: 100%; display: flex; justify-content: space-between">
+      <div id="myPaletteDiv" style="width: 180px; border: 2px solid black; margin-right: 2px; background-color: white; position: relative; -webkit-tap-highlight-color: rgba(255, 255, 255, 0);"><canvas tabindex="0" width="150" height="1125" style="position: absolute; top: 0px; left: 0px; z-index: 2; user-select: none; touch-action: none; width: 100px; height: 750px;"></canvas>
+        <div style="position: absolute; overflow: auto; width: 100px; height: 750px; z-index: 1;"><div style="position: absolute; width: 1px; height: 1px;"></div></div>
+    </div>
+    <div id="myDiagramDiv" style="flex-grow: 1; border: 2px solid black; height: 750px; background-color: white; position: relative; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); cursor: auto;"><canvas tabindex="0" width="1431" height="1125" style="position: absolute; top: 0px; left: 0px; z-index: 2; user-select: none; touch-action: none; width: 954px; height: 750px; cursor: auto;"></canvas>
+      <div style="position: absolute; overflow: auto; width: 954px; height: 750px; z-index: 1;"><div style="position: absolute; width: 1px; height: 1px;"></div></div>
+    </div>
+  </div>
+  <div class="info-box">
+    <h3 id="title"></h3>
+    <p id="description"></p>
+  </div>
+    
+  <form action="{{ url_for('draw') }}" method="POST">
+    <input type="hidden" name="title" value="{{ title }}">
+    <input type="hidden" id="teacherComment" value="{{ teacher_comment }}">
+    <button type="button"  id="SaveButton" onclick="save()" disabled="">Save</button>
+    <button type="button"  onclick="load()">Load</button>、
+    Diagram Model saved in JSON format:
+    <textarea id="mySavedModel" name="json_data" style="width:100%;height:300px">{{answer}}</textarea>
+    <button type="submit">Submit Diagram</button>
+  </form>
+    
+  <div id="buttonRow">
+    <button type="button" id="showComments">Show Comments</button>
+    <button type="button" id="returnButton" style="margin-left: auto;">Return</button>
+  </div>
+</div>
+</div>
+<script src="{{ url_for('static', filename='js/go.js', v='1.0') }}"></script>
+<script src="{{ url_for('static', filename='js/draw.js') }}"></script>
+</body>
+</html>

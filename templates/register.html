@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+</head>
+<body>
+    <div class="register-container">
+        <h1>Welcome to the Educational Presentation Platform!</h1>
+        <p>Let’s start from registering.</p>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <script>
+            window.onload = function() {
+              alert('{{ messages|join('\\n')|safe }}');
+            }
+          </script>
+        {% endif %}
+      {% endwith %}
+        <form id="registration-form" action="{{ url_for('register') }}" method="post">
+            <div class="input-group">
+                <input id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <input id="password" name="password" placeholder="Create a password" required>
+            </div>
+            <div class="status-info">
+                <p>Password needs to be strong!</p>
+                <p>Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter.</p>
+            </div>
+            <input type="submit" class="login-button" value="Continue">
+            <button type="button" class="back-button" onclick="window.location.href='{{ url_for('login') }}'">Return</button>
+        </form>
+    </div>
+</body>
+</html>
