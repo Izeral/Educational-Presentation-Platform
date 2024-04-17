@@ -14,6 +14,7 @@ python -u app.py
 ```
 ## Catalogue Structure  
 File storage complies with Flask basic requirements.
+```
 +-- app.py
 +-- templates
 |   +-- login.html
@@ -38,3 +39,4 @@ File storage complies with Flask basic requirements.
 +-- database.db
 +-- requirement.txt
 +-- README.md
+```
